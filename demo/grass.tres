@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TileType" format=3 uid="uid://p1k1j3ge75hf"]
+
+[ext_resource type="Script" uid="uid://cjifdu8jgm5kk" path="res://addons/level_editor/tile_type.gd" id="1_u7hlk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bn68d"]
+albedo_color = Color(0.45, 0.33, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bi7r6"]
+albedo_color = Color(0.36, 0.62, 0.25, 1)
+
+[resource]
+resource_name = "grass"
+script = ExtResource("1_u7hlk")
+top_material = SubResource("StandardMaterial3D_bi7r6")
+side_material = SubResource("StandardMaterial3D_bn68d")

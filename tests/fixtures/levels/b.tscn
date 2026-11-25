@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://addons/level_editor/entry_point.gd" id="1"]
+[ext_resource type="Script" path="res://addons/level_editor/exit.gd" id="2"]
+
+[node name="B" type="Node3D"]
+
+[node name="Door1" type="Node3D" parent="."]
+script = ExtResource("1")
+entry_name = &"door"
+
+[node name="Door2" type="Node3D" parent="."]
+script = ExtResource("1")
+entry_name = &"door"
+
+[node name="ToC" type="Node3D" parent="."]
+script = ExtResource("2")
+target_level = "res://tests/fixtures/levels/c.tscn"
+target_entry = &"x"
+
+[node name="ToA" type="Node3D" parent="."]
+script = ExtResource("2")
+target_level = "res://tests/fixtures/levels/a.tscn"
+target_entry = &"nope"
